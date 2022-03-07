@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 레이아웃 01</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;font-size: inherit;color: inherit;
+        font-weight: normal;}
+        ul,ol{list-style: none;}
+        a{text-decoration: none;}
+        img{vertical-align: middle;}
+        body{line-height: 1;}
+
+        /* basic float layout */
+
+        
+        .se01{
+            padding: 100px 0;
+            background-color: #f2f2f2;
+            text-align: center;
+        }      
+        
+        .se01 .container {
+            margin: 0 auto;
+            width: 1200px;
+            
+        }
+        .se01 .container::after {
+            content: "";clear: both;display: block;}
+
+        .se01 .con01 {
+            float: left;
+            width: 33.333333%;
+            padding: 0 15px;
+        }
+        .se01 figure img {width: 100%;
+        margin-bottom: 20px;}
+ 
+        .se02{
+            padding: 100px 0;
+            
+            text-align: center;
+        } 
+        
+        .se02 .container {
+            margin: 0 auto;
+            width: 1200px;
+        }
+        .se02 .container::after {
+            content: "";clear: both;display: block;}
+
+        .se02 .con02 {
+            float: left;
+            width: 25%;
+            padding: 0 15px;
+        }
+        .se02 figure img {width: 100%;}
+
+        .se03{
+            padding: 100px 0;
+            background-color: #f2f2f2;
+            text-align: center;
+        } 
+        
+        .se03 .container {
+            margin: 0 auto;
+            width: 1200px;
+        }
+        .se03 .container::after {
+            content: "";clear: both;display: block;}
+
+        .se03 .con03 {
+            float: left;
+            width: 20%;
+            padding: 0 15px;
+        }
+        .se03 figure img {width: 100%;}
+
+        .se04{
+            padding: 100px 0;
+            text-align: center;
+        } 
+        
+        .se04 .container {
+            margin: 0 auto;
+            width: 1200px;
+        }
+        .se04 .container::after {
+            content: "";clear: both;display: block;}
+
+        .se04 .con04 {
+            float: left;
+            width: 16.6666%;
+            padding: 0 15px;
+        }
+        .se04 figure img {width: 100%;}
+
+        .se05{
+            padding: 100px 0;
+            background-color: #f2f2f2;
+            text-align: center;
+        } 
+        
+        .se05 .container {
+            margin: 0 auto;
+            width: 1200px;
+        }
+        .se05 .container::after {
+            content: "";clear: both;display: block;}
+
+        .se05 .con05 {
+            float: left;
+            width: 50%;
+            padding: 0 15px;
+        }
+        .se05 figure img {width: 100%;}
+
+
+
+
+       
+    </style>
+</head>
+<body>
+   
+    <section class="se01">       
+        <div class="container">
+            <figure class="con01">
+                <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">              
+            </figure ">
+            <figure class="con01">
+                <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">
+            </figure>            
+            <figure  class="con01">
+                <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">               
+            </figure>
+        </div>
+    </section>
+
+    <section class="se02">       
+        <div class="container">
+            <figure class="con02">
+                <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">              
+            </figure>
+            <figure class="con02">
+                <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">
+            </figure>            
+            <figure class="con02">
+                <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">               
+            </figure>
+            <figure class="con02">
+                <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">               
+            </figure>
+        </div>
+    </section>
+
+    <section class="se03">       
+        <div class="container">
+            <figure class="con03">
+                <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">              
+            </figure>
+            <figure class="con03">
+                <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">
+            </figure>            
+            <figure class="con03">
+                <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">               
+            </figure>
+            <figure class="con03">
+                <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">               
+            </figure>
+            <figure class="con03">
+                <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">               
+            </figure>
+        </div>
+
+        <section class="se04">       
+            <div class="container">
+                <figure class="con04">
+                    <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">              
+                </figure>
+                <figure class="con04">
+                    <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">
+                </figure>            
+                <figure class="con04">
+                    <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">               
+                </figure>
+                <figure class="con04">
+                    <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">               
+                </figure>
+                <figure class="con04">
+                    <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">               
+                </figure>
+                <figure class="con04">
+                    <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">               
+                </figure>
+    </section>
+
+    <section class="se05">       
+        <div class="container">
+            <figure class="con05">
+                <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">              
+            </figure ">
+            <figure class="con05">
+                <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">
+            </figure>            
+        </div>
+    </section>
+
+
+
+</body>
+</html>
