@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float01 - box를 가로로 배치하는 방법01</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        section {
+            padding: 100px 0;
+            background-color: #ddd;
+        }
+
+        .container {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+            background-color: bisque;
+        }
+
+        .container div {
+            background-color: aqua;
+            flex: 1;
+            padding: 0 15px;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- 시멘틱태그 -header,main,section,footer,article,aside,figure -->
+    <section>
+        <div class="container">
+            <div>a</div>
+            <div>b</div>
+            <div>c</div>
+        </div>
+    </section>
+</body>
+
+</html>
