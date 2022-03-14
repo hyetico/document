@@ -1,0 +1,92 @@
+
+header {width: 100%;
+padding:30px 30px; font-size: 24px;
+margin-bottom: 20px;}
+header > a {float: left;font-weight: bold ;}
+nav {float: right;font-size: 12px;}
+nav ul.gnb{display: flex;justify-content: center;}
+nav ul.gnb li{padding: 0 20px;}
+.mainVisual {position: relative;}
+.mainVisual figure{
+height: 60vh;
+background-repeat: no-repeat;
+background-size: cover;
+background-position-x: center;
+background-position-y:center;
+
+}
+.mainVisual .item01{
+    background-image:url(../img/main_01.jpg);
+}
+.mainVisual .item02{
+    background-image:url(../img/main_02.jpg);
+}
+.mainVisual .item03{
+    background-image:url(../img/main_03.jpg);
+}
+.mainVisual .slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);    
+    display: flex; /* 가로로 정렬 해줌. 플렉스를 해주면 쪼그라듬*/
+    justify-content: center; /* 가운데 정렬 해줌 */
+    gap:10px;   
+}
+
+.mainVisual .slick-dots li {
+    background: #fff;
+    border-radius: 50%; 
+    /* %를 주면 타원이 되며 px를 줘야 모서리가 둥글어진다. */
+    /*  border-radius: 상 우 하 좌 ; */
+    width: 10px;height: 10px; 
+    /*  버튼에 디스플레이 논을 주면 0 이되기 때문에 값을 주어야한다. */
+    cursor: pointer;
+}
+.mainVisual .slick-arrow {
+    position: absolute;
+    z-index: 999;
+    width: 10px;
+    height: 10px;
+    transform: translateY(-50%);
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;    
+    outline: none;
+    background: transparent;
+    text-indent: -99999px;
+}
+ .mainVisual .slick-prev{
+    top: 50%;
+    left: 100px;
+    transform: rotate(-45deg);
+}
+.mainVisual .slick-next {
+    top: 50%;
+    right: 100px;
+    transform: rotate(135deg);
+}
+.mainVisual .slick-dots li.slick-active {
+    background: #666;
+}
+.mainVisual .slick-dots button {
+    display: none;
+}
+.mainVisual .slideArrows i {
+    position: absolute;
+    top: 50%;
+    font-size: 10px;
+    color: rgba(255,255,255,0.5);
+    transform: translateY(-50%);
+}
+.mainVisual .slideArrows i:first-child {
+    left: 20px;
+}
+.mainVisual .slideArrows i:last-child {
+    right: 20px;
+
+}
+footer {display: flex;
+    justify-content: center;
+    width: 100%;
+    padding:30px 30px; font-size: 10px;
+    margin-bottom: 20px;background: #fff;}

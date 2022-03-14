@@ -1,4 +1,4 @@
 $(function(){
-    $('main').hide();
+   /*  $('main').hide(); */
 
 }); // ready end
