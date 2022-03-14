@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 레이아웃 01</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;font-size: inherit;color: inherit;
+        font-weight: normal;}
+        ul,ol{list-style: none;}
+        a{text-decoration: none;}
+        img{vertical-align: middle;}
+        body{line-height: 1;}
+
+        /* basic float layout */
+
+        h1 {font-size: 30px; text-align: center; margin-bottom: 100px;}
+        .se01{
+            padding: 100px 0;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        .se01 h2 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+
+        }
+        .se01 > p{
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+        .se01 .container {
+            margin: 0 auto;
+            width: 1200px;
+        }
+        .se01 .container::after {
+            content: "";clear: both;display: block;}
+        .se01 figure {
+            float: left;
+            width: 33.333333%;
+            padding: 0 15px;
+        }
+        .se01 figure img {width: 100%;height: 100%;
+        margin-bottom: 20px;}
+        .se01 figure p {margin-bottom: 20px;
+            color: #888;
+        }
+        .se01 figure a {display: block;
+            width: 100px;
+            height: 30px;
+            line-height:30px;
+            margin: 0 auto;
+            border-radius: 10px;  
+            background-color: #888;
+            color: #f2f2f2;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>기본 레이아웃01</h1>
+    <section class="se01">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Accusamus ducimus totam fuga nisi odit vitae laborum delectus quod ut aperiam ex,.<br>
+            vel atque reprehenderit reiciendis aliquam corporis laboriosam aliquid animi!</p>
+        <div class="container">
+            <figure>
+                <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+            <figure>
+                <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+            <figure>
+                <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-0010.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+        </div>
+    </section>
+</body>
+</html>

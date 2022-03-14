@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position01 - 기초편</title>
+    <style>       
+        /*
+        position : static; — 포지션이 아니게 한다. //반응형만들때 사용한다.
+        position : relative; — 기준이 된다.좌표를 가진다. 떠오르지 않고 공간을 차지한다.
+        position : adsolute; — 좌표를 가진다. top,left,bottom,right; 좌표대로 떠오른다.(body가 기준이 된다.)
+        position : fixed; — 화면을 기준으로 떠오른다.좌표를 가진다.
+        */
+        body{color: #fff;text-align: center;background: #444;}
+        .headerWrap{position: fixed;width: 100%;
+        top: 0;left: 0;background-color: #666; z-index: 999;}
+        .wrap{position: relative;
+            width: 100%;background-color: #444;}
+        .contentWrap{
+            margin:500px;width: 500px;height: 200px;
+            background-color: #999;}
+        .absolute {position: absolute;
+            top: 100px;
+            right:100px;
+            background: #777;}
+        .fixed{
+            position: fixed;
+            top:300px;
+            left:300px;
+            background-color: #336;}
+         .popup img{width: 300px;height: 400px;}   
+         .popup01{
+             width: 400px;
+             padding: 100px 20px;
+             text-align: center;
+             background-color: #fff;
+             position: relative;
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%,-50%);
+             z-index: 10;
+            }
+         .popup01 button {position: absolute;right: 30px; bottom: 30px;}
+         .popup02{
+             position: absolute;
+             top: 10%;
+             left: 10%;
+             transform: translate(-50%,-50%);
+             z-index: 1;
+             
+         }
+
+
+    </style>
+</head>
+<body>
+    <div class="headerWrap">
+        sticky
+    </div>
+    <div class="wrap">
+        <section class="contentWrap">
+            <div class="absolute">
+                absolute
+            </div>
+            <div class="fixed">
+                fixed
+            </div>
+        </section>
+        <div class="popup01 popup">
+            <figure>
+                <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-003.jpg">
+                <button>close</button>
+            </figure>
+            
+            
+        </div>
+        <div class="popup02 popup">
+            <img src="./img/Margaret-Howell-SS22-campaign-1307x1888-006.jpg">
+        </div>
+    </div>
+  
+   
+</body>
+</html>

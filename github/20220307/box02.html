@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스모델02 - 요소를 좌우 가운데 위치 시키기</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+
+        /* 선택자 */
+        div{
+            background-color: #ddd;
+        }
+        div:nth-child(1){
+            width:100px;
+            margin: 0 auto; 
+            /*아래,위:0  좌우:auto 
+            풀어서 margin:0 auto 0 auto;                     
+            */ 
+            /*
+            방향4 : 상 우 하 좌
+            방향3 : 상 좌우 하
+            방향2 : 상하 좌우
+            */
+            text-align: center;
+        }
+        div:nth-child(2){
+            width:200px;
+            margin: 0 auto;
+            text-align: center;            
+        }
+        div:nth-child(3){
+            width:300px;            
+        }
+        div:nth-child(4){
+            width:400px;            
+        }
+        div:nth-child(5){
+            width:500px;            
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        box01
+    </div>
+    <div>
+        <span>box02</span>
+    </div>
+    <div>
+        box03
+    </div>
+    <div>
+        box04
+    </div>
+    <div>
+        box05
+    </div>
+
+</body>
+</html>
