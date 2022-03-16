@@ -4,6 +4,6 @@
 *{margin: 0;padding: 0;box-sizing: border-box;font-size: inherit;color: inherit;}
 ul,ol{list-style: none;}
 a{text-decoration: none;}
-body {font-family: 'Noto Sans KR', sans-serif;
-
-}
+body {font-family: 'Noto Sans KR', sans-serif;}
+img {vertical-align: middle; }
+button {font-family: 'Noto Sans KR', sans-serif;}

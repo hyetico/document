@@ -1,0 +1,36 @@
+.headerWrap{position: relative;
+    display: none;
+    background:#000;color: #fff;
+padding: 50px 0;}
+.headerWrap .container {width: 1200px;margin: 0 auto; 
+    text-align: center;}
+.xi-touch {position: absolute;
+    right:500px;
+cursor: pointer; font-size: 18px;}
+
+.tabMenu {
+    padding: 100px 0;
+    background: #f2f2f2;
+}
+.tabMenu .container {
+    width: 600px;
+    margin: 0 auto;
+}
+.tabMenu .tabLink {
+    display: flex;
+}
+.tabMenu .tabLink li {flex: 1;}
+.tabMenu .tabContent > div{display: none;}
+.tabMenu .tabContent > div.active {display: block;}
+
+.bgFixed {padding: 200px 0;
+text-align: center;
+color: #f2f2f2;
+background: url(../img/7df8ca97cd2b4.jpeg) no-repeat fixed center center;}
+
+.text01{width: 100%;
+    padding: 100px 0;
+background-color: #000;
+color: #fff;
+height: 500vh;
+text-align: center;}
