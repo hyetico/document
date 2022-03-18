@@ -1,0 +1,477 @@
+.topBanner {
+    background: #f3f3f3;
+    padding: 24px 0;
+}
+
+.topBanner .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+.topBanner .container h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 100;
+    letter-spacing: 0.040em;
+}
+
+.topBanner .container p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+}
+
+.topBanner .container a {
+    height: 14px;
+    line-height: 13px;
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: 300;
+    border: 1px solid #333;
+    padding: 0 20px;
+    text-transform: uppercase;
+
+}
+
+.topBanner .container i {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.headerWrap .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 100px;
+}
+
+/* .headerWrap .container>* {
+    padding: 0 15px;
+} */
+
+.headerWrap .serchForm {
+    margin-left: auto;
+
+}
+
+.gnb>ul {
+    display: flex;
+}
+
+.gnb>ul>li {
+    position: relative;
+    padding: 0 20px;
+}
+
+.gnb>ul>li~li::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
+    width: 2px;
+    height: 13px;
+    background: #333;
+}
+
+.headerWrap .serchForm input[type="search"] {
+    outline: none;
+    padding: 3px 0;
+    border: none;
+    border-bottom: 1px solid #333;
+
+}
+
+.headerWrap .serchForm button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.headerWrap .serchForm button i {
+
+    color: #fff;
+    background: #333;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.mainVisual .visualSlide {
+    border-top: 1px solid #ddd;
+}
+
+.mainVisual .visualSlide figure {
+    height: 600px;
+}
+
+.mainVisual .visualSlide figure .inner {
+    width: 1200px;
+    margin: 300px auto 0 auto;
+    padding: 0 15px;
+    color: #fff;
+
+}
+
+.mainVisual .visualSlide figure.item02 .inner {
+    color: #333;
+}
+
+.mainVisual .visualSlide figure .inner h3 {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s 0.5s;
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    text-shadow: 0 0 2px #333;
+
+}
+
+.mainVisual .visualSlide figure .inner p {
+    font-size: 15px;
+    font-weight: 300;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s 1s;
+}
+
+.mainVisual .visualSlide figure.oo .inner h3 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mainVisual .visualSlide figure.oo .inner p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mainVisual .visualSlide .item01 {
+    background: url(../img/mainvisual01.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .visualSlide .item02 {
+    background: url(../img/mainvisual02.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .visualSlide .item03 {
+    background: url(../img/mainvisual03.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .visualSlide .slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    display: flex;
+    gap: 10px;
+}
+
+.mainVisual .visualSlide .slick-dots li {
+    width: 100px;
+    height: 5px;
+    background: #333;
+    transition: 2s;
+}
+
+.mainVisual .visualSlide .slick-dots li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    background: red;
+}
+
+.mainVisual .visualSlide .slick-dots li.slick-active::after {
+    width: 100%;
+    transition: 3s;
+}
+
+.mainVisual .visualSlide .slick-dots li.slick-active {
+    background: #fff;
+}
+
+.mainVisual .visualSlide .slick-dots button {
+    display: none;
+}
+
+.mainProduct {
+    padding: 100px 0;
+    text-align: center;
+    color: #555;
+}
+
+.mainProduct h2 {
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 0.20em;
+    margin-bottom: 10px;
+
+}
+
+.mainProduct p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.mainProduct .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainProduct .container figure {
+    position: relative;
+    padding: 0 15px;
+}
+
+
+.mainProduct .container figure .inner {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.mainProduct .container figure .inner a {
+    margin-bottom: 30px;
+}
+
+.mainProduct .container figure strong {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.mainProduct .container figure a {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #333;
+    color: #fff;
+}
+
+.mainProduct .container figure a:hover {
+    background: #ddd;
+    color: #fff;
+}
+
+.mainProduct .inner img {
+    transition: 0.5s;
+}
+
+.mainProduct .inner:hover img {
+    transform: scale(1.2);
+}
+
+.mainProduct .container figure .label {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    border-top: 10px solid #f00;
+    border-left: 50px solid #f00;
+    border-bottom: 10px solid #f00;
+    border-right: 10px solid transparent;
+}
+
+.mainProduct .container figure .label span {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.eventBanner {
+    color: #ddd;
+    padding: 100px 0;
+    background: url(../img/mainvisual03.jpg) no-repeat center center/cover;
+    filter: grayscale(1);
+    text-align: center;
+}
+
+.eventBanner h2 {
+    margin-bottom: 10px;
+}
+
+.eventBanner p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.eventBanner i {
+    padding: 7px;
+    margin-left: 10px;
+    background: #333;
+    border-radius: 50%;
+}
+
+.eventProduct {
+    padding: 100px 0;
+}
+
+.eventProduct .container {
+    width: 1200px;
+    display: flex;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.eventProduct .eProductSlide {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.eventProduct .left {
+    width: 50%;
+    position: relative;
+    padding: 30px 30px;
+}
+
+.eventProduct .right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.eventProduct .rightInner {
+    margin: 0 auto;
+}
+
+.eventProduct .right h3 {
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 0.20em;
+    margin-bottom: 10px;
+}
+
+.eventProduct .right p {
+    font-size: 15px;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.eventProduct .right i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.eventProduct .allows i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    font-size: 5px;
+    color: #fff;
+    background: #000;
+    border-radius: 50px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.eventProduct .allows i:first-child {
+    margin-left: -300px;
+}
+
+.eventProduct .left:hover .allows i {
+    opacity: 1;
+}
+
+.eventProduct .allows i:last-child {
+    margin-left: 300px;
+}
+
+.allProduct {
+    position: relative;
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f2f2f2;
+}
+
+.allProduct h2 {
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 0.20em;
+    margin-bottom: 10px;
+}
+
+.allProduct p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.allProduct .container {
+    width: 1200px;
+
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.allProduct .aproductSlide figure {
+    padding: 0 15px;
+}
+
+
+.allProduct .inner {
+    margin-bottom: 20px;
+}
+
+.allProduct .inner+strong {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.allProduct .slick-dots {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.allProduct .slick-dots li {
+    width: 13px;
+    height: 13px;
+    background: #888;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.allProduct .slick-dots li.slick-active {
+    background: #333;
+}
+
+.allProduct .slick-dots li button {
+    display: none;
+}
+
+.allProduct i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+    background: #333;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.allProduct i:first-child {
+    margin-left: -700px;
+}
+
+.allProduct i:last-child {
+    margin-left: 700px;
+}
