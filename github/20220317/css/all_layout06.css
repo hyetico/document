@@ -17,7 +17,6 @@ padding: 0 15px; position: relative;}
     letter-spacing: -0.025em;
 }
 .topBanner .container a {
-    display: inline-block;
     height: 14px;
     line-height: 13px;
     margin-left: 20px;
@@ -39,7 +38,7 @@ padding: 0 15px; position: relative;}
 /* */
 
 /* */
-.headerWrap {}
+
 .headerWrap .container {
      display: flex;
      width: 1200px;
@@ -53,9 +52,7 @@ padding: 0 15px; position: relative;}
   margin-left: auto;
 
 }
-.gnb {
 
-}
 .gnb>ul{display: flex;}
 .gnb>ul>li{position: relative;
     padding: 0 20px;}
@@ -99,6 +96,9 @@ background: #333;}
     color: #fff;
 
 }
+.mainVisual .visualSlide figure.item02 .inner {
+    color: #333;
+}
 .mainVisual .visualSlide figure .inner h3 {
     opacity: 0;
     transform: translateY(100px);
@@ -116,11 +116,11 @@ background: #333;}
    transform: translateY(100px);
    transition: 1s 1s;
 }
-.mainVisual .visualSlide figure.slick-active .inner h3 {
+.mainVisual .visualSlide figure.oo .inner h3 {
     opacity: 1;
     transform: translateY(0);
 }
-.mainVisual .visualSlide figure.slick-active .inner p {
+.mainVisual .visualSlide figure.oo .inner p {
     opacity: 1;
     transform: translateY(0);
 }
@@ -152,8 +152,239 @@ transition: 3s;}
     display: none;
 }
 
+.mainProduct {
+    padding: 100px 0;
+    text-align: center;
+    color:#555;   
+}
+.mainProduct h2 {
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 0.20em;
+    margin-bottom: 10px;
 
+}
+.mainProduct p {
+    font-size:15px;
+    font-weight:300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+.mainProduct .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+.mainProduct .container figure {
+    position: relative;
+    padding: 0 15px;
+}
+.mainProduct .inner {
+    overflow: hidden;
+  
+ }
+.mainProduct .container figure .inner {
+    margin-bottom: 15px;}
 
+.mainProduct .container figure .inner a {
+    margin-bottom: 30px;
+}
 
+.mainProduct .container figure strong {
+    display: block;
+    margin-bottom: 10px;
+}
 
-           
+.mainProduct .container figure a{
+    display:inline-block;
+    padding: 10px 30px;
+    background: #333;
+    color: #fff;
+}
+.mainProduct .container figure a:hover{
+    background: #ddd;
+    color: #fff;
+}
+.mainProduct .inner img{
+    transition: 0.5s;
+}
+.mainProduct .inner:hover img{
+    transform: scale(1.2);
+}
+.mainProduct .container figure .label {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    border-top: 10px solid #f00;
+    border-left: 50px solid #f00;
+    border-bottom: 10px solid #f00;
+    border-right: 10px solid transparent;   
+}
+.mainProduct .container figure .label span {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    color: #fff;
+    font-size: 12px;
+}
+.eventBanner {
+    color: #ddd;
+    padding: 100px 0;
+    background: url(../img/mainvisual03.jpg) no-repeat center center/cover;
+    filter: grayscale(1);
+    text-align: center;
+}
+.eventBanner h2 {
+    margin-bottom: 10px;
+}
+.eventBanner p {
+    font-size:15px;
+    font-weight:300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+.eventBanner i {
+    padding: 7px;
+    margin-left: 10px;
+    background: #333;
+    border-radius: 50%;
+}
+.eventProduct{
+    padding: 100px 0;
+    
+
+}
+.eventProduct .container{width: 1200px;
+    display: flex;
+    align-content: center; 
+    margin: 0 auto;
+}
+
+.eventProduct .eProductSlide {padding:5px;cursor: pointer;}
+
+.eventProduct .left {width: 50%;
+    position: relative;
+padding: 30px 30px;}
+.eventProduct .right {width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;}
+.eventProduct .rightInner {margin: 0 auto;}  
+.eventProduct .right h3
+    {font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 0.20em;
+    margin-bottom: 10px;} 
+
+.eventProduct .right p {
+    font-size:15px;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+.eventProduct .right i {
+    font-size: 24px;
+    cursor: pointer;
+}
+.eventProduct .allows i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);    
+    padding: 10px;
+    font-size: 5px;
+    color: #fff;
+    background: #000;
+    border-radius: 50px;
+    cursor: pointer;
+    opacity: 0;
+}
+.eventProduct .allows i:first-child{
+    margin-left: -300px;
+}
+.eventProduct .left:hover .allows i{ 
+    opacity: 1;
+    
+}
+.eventProduct .allows i:last-child{
+    margin-left: 300px;
+}
+
+.allProduct {
+    position: relative;
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f2f2f2;
+}
+.allProduct h2 {font-size: 19px;
+        font-weight: 100;
+        letter-spacing: 0.20em;
+        margin-bottom: 10px;} 
+.allProduct p {
+        font-size:15px;
+        font-weight:300;
+        letter-spacing: -0.025em;
+        margin-bottom: 30px;
+    }
+.allProduct .container {width: 1200px;
+
+    margin: 0 auto;
+padding: 0 15px;}
+
+.allProduct .aproductSlide figure{
+        padding: 0 15px;
+    }
+    
+    
+.allProduct .inner {
+        margin-bottom: 20px;
+    }
+    
+    .allProduct .inner + strong {
+        display: block;
+        margin-bottom: 20px;
+        font-weight: 100;
+        font-size: 13px;
+    }
+
+    .allProduct .slick-dots {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .allProduct .slick-dots li {
+        width: 13px;
+        height: 13px;
+        background: #888;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .allProduct .slick-dots li.slick-active {
+        background: #333;
+    }
+    
+    .allProduct .slick-dots li button {
+        display: none;
+    }
+    
+    .allProduct i{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);    
+        padding: 10px;
+        font-size: 30px;
+        color: #fff;
+        background: #333;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    
+    .allProduct i:first-child {
+        margin-left: -700px;    
+    }
+
+    .allProduct i:last-child {
+        margin-left: 700px;
+    }
