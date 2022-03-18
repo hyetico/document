@@ -17,13 +17,13 @@ $('.visualSlide').slick({
 });
 //slick 애니메이션에 첫 이미지에 글씨가 움직이지 않는다.
 //afterchange callback 현재 슬라이드가 바뀌는 순간 글씨를 움직여줄수 있다.
-$('.visualSlide').on('beforeChange',function(){
+/* $('.visualSlide').on('beforeChange',function(){
    console.log('슬라이드시작 전');;
 })
 $('.visualSlide').on('afterChange',function(){
    console.log('슬라이드시작 후');;
 })
-
+ */
 /* $('.visualSlide').on('afterChange',function(){
    var currentSlide = $('.visualSlide').slick('slickCurrentSlide');
    $('.visualSlide').eq(currentSlide).addClass('클래스이름을정해준다').siblings().removeClass('클래스이름을정해준다');
