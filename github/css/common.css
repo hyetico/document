@@ -5,5 +5,4 @@
 ul,ol{list-style: none;}
 a{text-decoration: none;}
 body {font-family: 'Noto Sans KR', sans-serif;}
-img {vertical-align: middle; }
-button {font-family: 'Noto Sans KR', sans-serif;}
+img {vertical-align: middle; max-width: 100%;}
