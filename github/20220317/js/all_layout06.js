@@ -1,6 +1,7 @@
 $(function(){
 ///////////////////////////////////
 
+
 // topBanner : kang 2022.03.17 m
 
 function topBannerHandler(){
@@ -45,7 +46,6 @@ $('.eventProduct .allows i:last-child').on('click',function(){
    $('.eProductSlide').slick('slickNext')
 });
    
-
 $('.aproductSlide').slick({
    arrows: false,
    dots: true,
@@ -60,5 +60,31 @@ $('.allProduct i:last-child').on('click',function(){
    $('.aproductSlide').slick('slickNext')
 });
 
+//탭메뉴
+$('.tapMenu li').on('click',function(){
+   var idx = $(this).index();
+   $(this).addClass('active').siblings().removeClass('active'); 
+   $('.tapContent>div').eq(idx).addClass('active').siblings().removeClass('active');
+})
+//유튜브 플레이어
+$("#bgndVideo").YTPlayer({
+   videoURL: '8An3BJuTTDc',
+   containment:'.movieBg',
+   autoPlay:true,
+   mute:true,  
+   startAt:0,
+   opacity:1,
+   showControls:false,
+   playOnlyIfVisible: true,
+});
+
+$('.movieBg i:first-child').on('click',function(){
+   $("#bgndVideo").YTPPause();
+});
+$('.movieBg i:last-child').on('click',function(){
+  $("#bgndVideo").YTPPlay();
+});
 
 }); // ready end
+
+/* BsekcY04xvQ */
