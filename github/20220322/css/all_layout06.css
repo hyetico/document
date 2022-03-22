@@ -24,14 +24,14 @@
 .topBanner .tbLeft h2 {
     margin-bottom: 20px;
     font-size: 24px;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 0.040em;
 }
 
 .topBanner .tbLeft p {
     margin-bottom: 20px;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 100;
     letter-spacing: -0.025em;
 }
 
@@ -39,8 +39,7 @@
     overflow: hidden;
     width: 100%;
     height: 100px;
-
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .topBanner .tbright img {
@@ -55,7 +54,7 @@
     font-size: 13px;
     font-weight: 300;
     border: 1px solid #333;
-    padding: 0 20px;
+    padding: 5px 20px;
     text-transform: uppercase;
 
 }
@@ -336,8 +335,10 @@
 
 .eventBanner h2 {
     margin-top: 100px;
+    font-weight: 100;
     font-size: 19px;
     margin-bottom: 20px;
+
 }
 
 .eventBanner p {
@@ -450,7 +451,7 @@
 
 .allProduct h2 {
     font-size: 19px;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 0.20em;
     margin-bottom: 20px;
 }
@@ -590,11 +591,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 15px 30px;
-    border: 1px solid #333;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background: #fff;
     color: #000;
-    padding: 0 20px;
-    border-radius: 10px;
     transition: 1s;
 }
 
@@ -602,8 +603,8 @@
     background: #ffffff;
     color: #48acd1;
     border: 1px solid #9991;
-    border-radius: 30px;
-    padding: 15px 30px;
+    border-radius: 20px;
+    padding: 15px 25px;
 }
 
 
