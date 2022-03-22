@@ -79,11 +79,6 @@ $('.pupup01 button').on('click',function(){
 })
 
 
-
-
-
-
-
 //유튜브 플레이어
 $("#bgndVideo").YTPlayer({
    videoURL: 'ivM1fW0v6cc',
