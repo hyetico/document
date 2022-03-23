@@ -72,12 +72,31 @@ $('#link').on('change',function(){
    let lik = $(this).val();
    if (!lik) return;
    window.open(lik);
-})
+});
 
+//팝업
 $('.pupup01 button').on('click',function(){
    $(this).parent().hide();
-})
+});
 
+//픽스버튼
+$('.toTop').on('click',function(){
+   $('html, body').animate({
+      scrollTop:0
+   },400);
+   return false;
+});
+
+//스크롤
+$(window).on('scroll',function(){
+  let sct = $(window).scrollTop();
+  console.log(sct);
+  if (sct > 500 ){
+     $('.toTop').fadeIn(1000);
+  } else {
+      $('.toTop').fadeOut(1000);
+  }
+}) 
 
 //유튜브 플레이어
 $("#bgndVideo").YTPlayer({

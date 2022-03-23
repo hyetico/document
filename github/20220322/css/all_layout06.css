@@ -769,3 +769,19 @@
     font-size: 14px;
     cursor: pointer;
 }
+
+.toTop {
+    position: fixed;
+    inset: auto 50px 100px auto;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.toTop i {
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #333;
+    background-color: #fff;
+
+}

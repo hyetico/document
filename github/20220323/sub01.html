@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본으로 돌아가기 01</title>
+    <link rel="stylesheet" href="./common.css">
+    <style>
+        .Wrap {}
+
+        header,
+        footer {
+            height: 200px;
+            background: #555;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        article {
+            min-height: 500px;
+        }
+
+        .subPage .greeting {
+            padding: 100px 0;
+            letter-spacing: -0.025em;
+        }
+
+        .subPage .greeting h2 {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .subPage .greeting span {
+            color: rgb(43, 77, 170);
+        }
+
+        .subPage .greeting h2::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: #343a40;
+            margin: 15px auto;
+        }
+
+        .subPage .greeting>p {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+
+        .subPage .greeting .container {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .subPage .greeting .container>div {
+            width: 60%;
+            padding: 0 15px;
+        }
+
+        .subPage .greeting .container>figure {
+            width: 40%;
+            padding: 0 15px;
+        }
+
+        .subPage .ceoGreeting h3 {
+            font-size: 23px;
+            margin-bottom: 50px;
+            line-height: 1.5;
+        }
+
+        .subPage .ceoGreeting h3 span {
+            color: rgb(43, 77, 170);
+            font-weight: 300;
+        }
+
+        .subPage .ceoGreeting p {
+            line-height: 1.2;
+        }
+
+        .subPage .ceoGreeting strong {
+            font-weight: 700;
+        }
+
+        .subPage .info {
+            padding: 100px 0;
+            border: 1px solid #ddd;
+        }
+
+        .subPage .info .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .subPage .info h3 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .subPage .info h3::before {
+            content: "";
+            display: inline-block;
+            width: 3px;
+            height: 17px;
+            background-color: rgb(43, 77, 170);
+            margin-right: 10px;
+            font-weight: 300;
+        }
+
+        .subPage .info .infoTable {
+            width: 100%;
+            border-top: 2px solid #555;
+            border-bottom: 2px solid #555;
+            border-collapse: collapse;
+        }
+
+        .subPage .info .infoTable td,
+        .subPage .info .infoTable th {
+            padding: 5px 10px;
+            border-bottom: 1px solid #555;
+            text-align: left;
+        }
+
+        .subPage .info .infoTable th {
+            font-weight: 900;
+            background: #f2f2f2;
+        }
+
+        .subPage .info .infoTable th~th {
+            border-left: 1px solid #999;
+
+        }
+
+        .subPage .info .infoTable td~td {
+
+            border-left: 1px solid #999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Wrap">
+        <header>
+            header
+        </header>
+        <article class="subPage">
+            <section class="greeting">
+                <h2><span>Ceo`s</span> greeting</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="container">
+                    <div class="ceoGreeting">
+                        <h3>Lorem ipsum, dolor sit amet consectetur <span>adipisicing </span>elit.<br>
+                            <span>adipisicing </span>elit.dolorum laborum soluta labore.</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem placeat, pariatur temporibus
+                            quos facilis provident repellat? Maiores, voluptatibus voluptas debitis quidem esse atque
+                            molestiae, vel amet reprehenderit, mollitia eos ullam!<br><br>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem placeat, pariatur temporibus
+                            quos facilis provident repellat? Maiores, voluptatibus voluptas debitis quidem esse atque
+                            molestiae, vel amet reprehenderit, mollitia eos ullam!<br><br>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem placeat, pariatur temporibus
+                            quos facilis provident repellat? Maiores, voluptatibus voluptas debitis quidem esse atque
+                            molestiae, vel amet reprehenderit, mollitia eos <strong>ullam!</strong> <br><br><br>
+                        </p>
+                    </div>
+                    <figure>
+                        <img src="../20220322/img/01.jpg" alt="">
+                    </figure>
+                </div>
+            </section>
+            <section class="info">
+                <div class="container">
+                    <h3>주요현황</h3>
+                    <table class="infoTable">
+                        <thead>
+                            <tr>
+                                <th>2000</th>
+                                <th>2000</th>
+                                <th>2000</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1000</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>1000</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </article>
+        <footer>
+            &copy; kang
+        </footer>
+    </div>
+
+</body>
+
+</html>
