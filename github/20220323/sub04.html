@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본으로 돌아가기 04</title>
+    <link rel="stylesheet" href="./common.css">
+    <style>
+        header,
+        footer {
+            height: 200px;
+            background: #555;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .subPage .subContent {
+            padding: 100px 0;
+            letter-spacing: -0.025em;
+        }
+
+        .subPage .subContent h2 {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+
+        }
+
+        .subPage .subContent h2::before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #48acd1;
+            transform: translateX(-10px);
+        }
+
+        .subPage .subContent>p {
+            font-size: 15px;
+            font-weight: 300;
+            text-align: center;
+
+            margin-bottom: 50px;
+        }
+
+        .subPage .subContent .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .subPage .subContent .container .top {
+            display: flex;
+            width: 100%;
+            border: 1px solid #f2f2f2;
+            margin-bottom: 30px;
+        }
+
+        .subPage .subContent .container .left {
+            width: 50%;
+        }
+
+        .subPage .subContent .container .right {
+            width: 50%;
+        }
+
+        .subPage .subContent figure {
+            position: relative;
+            flex: 1;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .subPage .subContent figure~figure {
+
+            border-left: 1px solid #f2f2f2;
+        }
+
+        .subPage .subContent figure:nth-child(1) {
+
+            background: url(./img/main01.jpg) no-repeat 100% center/cover;
+        }
+
+        .subPage .subContent figure:nth-child(2) {
+            background: url(./img/main02.jpg) no-repeat 30% center/cover;
+        }
+
+        .subPage .subContent figure:nth-child(3) {
+            background: url(./img/object_cocoon_slide1.jpg) no-repeat 40% center/cover;
+        }
+
+        .subPage .subContent figure:nth-child(4) {
+            background: url(./img/main01.jpg) no-repeat 100% center/cover;
+        }
+
+        .subPage .subContent figure .inner {
+            padding: 30px 10px;
+            position: absolute;
+            left: 0;
+            top: -100%;
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 80%;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            transition: 0.8s;
+        }
+
+        .subPage .subContent figure:hover .inner {
+            top: 0;
+        }
+
+        .subPage .subContent figure .inner h3 {}
+
+        .subPage .subContent figure .inner h3::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            margin: 20px auto;
+            background: #48acd1;
+        }
+
+        .subPage .subContent figure .inner p {
+            text-align: left;
+        }
+
+        .subPage .subContent figure a {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+            font-size: 13px;
+            background-color: #f2f2f2;
+            border: 1px solid #48acd1;
+            color: #48acd1;
+            width: 80px;
+            padding: 5px 0;
+            text-align: center;
+            transition: 0.5s;
+        }
+
+        .subPage .subContent figure:hover a {
+            background: rgba(0, 0, 0, 0.3);
+
+        }
+
+        .subPage .subContent .left {
+            position: relative;
+            padding: 0 0 0 20px;
+
+        }
+
+        .subPage .subContent .left h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+        }
+
+        .subPage .subContent .left h3::before {
+            position: absolute;
+            top: 10px;
+            transform: translateY(-20%);
+            left: 0;
+            content: "";
+            display: block;
+            width: 5px;
+            height: 35px;
+            background: #48acd1;
+        }
+
+        .subPage .hospitalContent .left p {
+            font-size: 15px;
+            font-weight: 300;
+
+        }
+
+        .dotList {
+            line-height: 1.6;
+        }
+
+        .dotList>li {
+            border-bottom: 1px solid #f2f2f2;
+        }
+
+        .dotList>li::before {
+            content: "";
+            display: inline-block;
+            width: 3px;
+            height: 3px;
+            background: #48acd1;
+            vertical-align: middle;
+            margin: 0 10px 0 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Wrap">
+        <header>
+            header
+        </header>
+        <article class="subPage">
+            <section class="subContent">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                </p>
+                <div class="container">
+                    <div class="top">
+                        <figure>
+                            <div class="inner">
+                                <h3>Lorem ipsum dolor</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet<br>
+                                    consectetur adipisicing elit.
+                                </p>
+                            </div>
+                            <a href="#!">more</a>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <h3>Lorem ipsum dolor</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet<br>
+                                    consectetur adipisicing elit.
+                                </p>
+                            </div>
+                            <a href="#!">more</a>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <h3>Lorem ipsum dolor</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet<br>
+                                    consectetur adipisicing elit.
+                                </p>
+                            </div>
+                            <a href="#!">more</a>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <h3>Lorem ipsum dolor</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet<br>
+                                    consectetur adipisicing elit.
+                                </p>
+                            </div>
+                            <a href="#!">more</a>
+                        </figure>
+                    </div>
+                    <div class="left">
+                        <h3>
+                            Lorem ipsum dolor
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet<br>
+                            consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <ul class="right dotList">
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+        <footer>
+            &copy; kang
+        </footer>
+    </div>
+
+</body>
+
+</html>

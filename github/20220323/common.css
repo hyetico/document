@@ -19,10 +19,10 @@ a {
 }
 
 body {
-    /*   font-family: 'Noto Sans KR', sans-serif; */
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 img {
-    vertical-align: middle;
+
     max-width: 100%;
 }
