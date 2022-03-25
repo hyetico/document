@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본으로 돌아가기 06</title>
+    <link rel="stylesheet" href="./common.css">
+    <style>
+        header {
+            background: transparent;
+            border-bottom: 1px solid #333;
+            margin-bottom: 30px;
+        }
+
+        header .headerInfo {
+            margin: 0 auto;
+            width: 1200px;
+            display: flex;
+        }
+
+        header .headerInfo span {
+            flex: 1;
+            text-align: right;
+            padding: 10px 15px;
+            font-size: 12px;
+        }
+
+        header .headerInfo span a~a::before {
+            content: "/";
+            display: inline-block;
+            padding: 0 5px;
+        }
+
+        header .container {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        header .container h1 {
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        header .container nav {
+            width: 100%;
+            flex: 1;
+        }
+
+        header .container ul {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px
+        }
+
+        header .container ul.gnb li {
+            padding: 0 10px;
+        }
+
+        #subPage .zig {
+            padding: 100px 0;
+        }
+
+        #subPage .zig .container {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        #subPage .zig .container figure {
+            width: 70%;
+            padding: 15px 15px;
+        }
+
+        #subPage .zig .container .txt {
+
+            width: 30%;
+            padding: 15px 15px;
+        }
+
+        #subPage .zig .container .txt strong {
+            display: block;
+            font-size: 17px;
+            color: #666;
+        }
+
+        #subPage .zig .container .txt h3 {
+            font-size: 19px;
+            color: #666;
+            margin: 0 0 20px 0;
+        }
+
+        #subPage .zig .container .txt p {
+            font-size: 15px;
+            line-height: 1;
+            margin: 0 0 20px 0;
+        }
+
+        #subPage .zig .container .txt a {
+            display: inline-block;
+            padding: 6px 20px;
+            border: 1px solid #f00;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Wrap">
+        <header>
+            <div class="headerInfo">
+                <span>
+                    <a href="#">LOGIN</a>
+                    <a href="#">JOIN</a>
+                    <a href="#">MYPAGE</a>
+                    <a href="#">CART(0)</a>
+                    <a href="#">ORDER</a>
+                </span>
+            </div>
+            <div class="container">
+                <h1><a href="#!">++++</a></h1>
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="#!">BRAND</a></li>
+                        <li><a href="#!">SHOP</a></li>
+                        <li><a href="#!">WHOLESALE</a></li>
+                        <li><a href="#!">WERK</a></li>
+                        <li><a href="#!">NEWS</a></li>
+                        <li><a href="#!">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <article id="subPage">
+            <section class="zig">
+                <div class="container">
+                    <figure>
+                        <img src="./img/b.jpg" alt="">
+                    </figure>
+                    <div class="txt">
+                        <strong>Im coffee lover</strong>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p>
+                            Magnam velit voluptatum laboriosam quos maiores possimus,<br>
+                            eveniet autem eligendi quae ducimus,,<br>
+                            porro cupiditate asperiores,<br>
+                            praesentium ea nemo tempore, vero voluptate nostrum.
+                        </p>
+                        <a href="#">Go Now</a>
+                    </div>
+                    <div class="txt">
+                        <strong>Im coffee lover</strong>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p>
+                            Magnam velit voluptatum laboriosam quos maiores possimus,<br>
+                            eveniet autem eligendi quae ducimus,,<br>
+                            porro cupiditate asperiores,<br>
+                            praesentium ea nemo tempore, vero voluptate nostrum.
+                        </p>
+                        <a href="#">Go Now</a>
+                    </div>
+                    <figure>
+                        <img src="./img/b.jpg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./img/b.jpg" alt="">
+                    </figure>
+                    <div class="txt">
+                        <strong>Im coffee lover</strong>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p>
+                            Magnam velit voluptatum laboriosam quos maiores possimus,<br>
+                            eveniet autem eligendi quae ducimus,,<br>
+                            porro cupiditate asperiores,<br>
+                            praesentium ea nemo tempore, vero voluptate nostrum.
+                        </p>
+                        <a href="#">Go Now</a>
+                    </div>
+                    <div class="txt">
+                        <strong>Im coffee lover</strong>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p>
+                            Magnam velit voluptatum laboriosam quos maiores possimus,<br>
+                            eveniet autem eligendi quae ducimus,,<br>
+                            porro cupiditate asperiores,<br>
+                            praesentium ea nemo tempore, vero voluptate nostrum.
+                        </p>
+                        <a href="#">Go Now</a>
+                    </div>
+                    <figure>
+                        <img src="./img/b.jpg" alt="">
+                    </figure>
+                </div>
+    </div>
+    </section>
+    </article>
+    <footer>
+        &copy; kang
+    </footer>
+    </div>
+
+</body>
+
+</html>

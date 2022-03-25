@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본으로 돌아가기 05</title>
+    <link rel="stylesheet" href="./common.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+        header,
+        footer {
+            text-align: center;
+        }
+
+        #subPage .info__content {
+            padding: 100px 0;
+            letter-spacing: -0.025em;
+        }
+
+        #subPage .info__content h2 {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        #subPage .info__content h2::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: #333;
+            margin: 100px auto;
+        }
+
+        #subPage .info__content>p {
+            font-size: 15px;
+            font-weight: 300;
+            text-align: center;
+            margin: 0 0 50px 0;
+        }
+
+        #subPage .info__content .fixed_bg {
+            background: url(./img/b3.jpg) no-repeat fixed center center/cover;
+            text-align: center;
+            color: #fff;
+            padding: 100px 0;
+            margin: 0 0 100px 0;
+        }
+
+        #subPage .info__content .fixed_bg strong {
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: 'Nanum Myeongjo', serif;
+            margin: 0 0 10px 0;
+        }
+
+        #subPage .info__content .fixed_bg p {
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+        #subPage .info__content .container {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        #subPage .info__content .container figure {
+            padding: 0 15px;
+            margin-bottom: 100px;
+        }
+
+        #subPage .info__content .container .inner {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            border-bottom: 5px solid #080590f5;
+        }
+
+        #subPage .info__content .container .txt {
+            position: absolute;
+            top: calc(100% - 70px);
+            left: 0px;
+            background: rgb(233, 7, 7);
+            opacity: 0.3;
+            color: #f2f2f2;
+            padding: 20px 15px;
+            width: 100%;
+            height: 100%;
+            transition: 0.5s;
+        }
+
+        #subPage .info__content .container .inner:hover .txt {
+            top: calc(100% - 160px);
+        }
+
+        #subPage .info__content .txt strong {
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        #subPage .info__content .txt strong::after {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 2px;
+            background: #fff;
+            margin: 15px 0 25px 0;
+        }
+
+        /*     #subPage .info__content figure:nth-child(1) strong {
+            color: rgba(20, 9, 119, 0.959);
+        }
+
+        #subPage .info__content figure:nth-child(2) strong {
+            color: rgb(245, 208, 162);
+        }
+
+        #subPage .info__content figure:nth-child(3) strong {
+            color: rgba(20, 9, 119, 0.959);
+        }
+
+        #subPage .info__content figure:nth-child(4) strong {
+            color: rgb(245, 208, 162);
+        } */
+
+
+        /*  #subPage .info__content figure:nth-child(2) .inner {
+            border-color: rgb(245, 199, 144);
+        }
+
+        #subPage .info__content figure:nth-child(4) .inner {
+            border-color: rgb(245, 199, 144); 
+        }*/
+
+        #subPage .info__content .danger {
+            width: 1170px;
+            margin: 0 auto;
+            background: #f3f3f3;
+            padding: 30px 20px;
+        }
+
+        #subPage .info__content .danger strong {
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0 0 30px 0;
+        }
+
+        #subPage .info__content .danger i {
+            margin-right: 10px;
+            color: #f00;
+        }
+
+        #subPage .info__content .danger p {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 1.4;
+            margin: 0 0 30px 0;
+        }
+
+        #subPage .info__content .danger .list {
+            line-height: 1.6;
+        }
+
+        #subPage .info__content .danger .list li::before {
+            content: "";
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            background: #f00;
+            vertical-align: middle;
+            margin: 0 10px 0 0;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Wrap">
+        <header>
+            header
+        </header>
+        <article id="subPage">
+            <section class="info__content">
+                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </h2>
+                <p>
+                    Maxime totam vero eius alias repellat quia accusantium.
+                </p>
+                <div class="fixed_bg">
+                    <strong>
+                        Maxime totam vero eius alias repellat quia accusantium.
+                    </strong>
+                </div>
+                <div class="container">
+                    <figure>
+                        <div class="inner">
+                            <img src="./img/copy-1646378019-250g20BABY2028198x19829.png" alt="">
+                            <div class="txt">
+                                <strong>01</strong>
+                                <h3>Lorem ipsum dolor sit.</h3>
+                                <p>Maxime totam vero eius alias repellat quia accusantium.</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure>
+                        <div class="inner">
+                            <img src="./img/copy-1646378019-250g20BABY2028198x19829.png" alt="">
+                            <div class="txt">
+                                <strong>02</strong>
+                                <h3>Lorem ipsum dolor sit.</h3>
+                                <p>Maxime totam vero eius alias repellat quia accusantium.</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure>
+                        <div class="inner">
+                            <img src="./img/copy-1646378019-250g20BABY2028198x19829.png" alt="">
+                            <div class="txt">
+                                <strong>03</strong>
+                                <h3>Lorem ipsum dolor sit.</h3>
+                                <p>Maxime totam vero eius alias repellat quia accusantium.</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure>
+                        <div class="inner">
+                            <img src="./img/copy-1646378019-250g20BABY2028198x19829.png" alt="">
+                            <div class="txt">
+                                <strong>04</strong>
+                                <h3>Lorem ipsum dolor sit.</h3>
+                                <p>Maxime totam vero eius alias repellat quia accusantium.</p>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="danger">
+                    <strong><i class="xi-warning"></i>Lorem ipsum dolor sit.</strong>
+                    <p>Maxime totam vero eius alias repellat quia accusantium.</p>
+                    <ul class="list">
+                        <li>Maxime totam vero eius alias repellat quia accusantium.</li>
+                        <li>Maxime totam vero eius alias repellat quia accusantium.</li>
+                        <li>Maxime totam vero eius alias repellat quia accusantium.</li>
+                        <li>Maxime totam vero eius alias repellat quia accusantium.</li>
+                        <li>Maxime totam vero eius alias repellat quia accusantium.</li>
+                        <li>Maxime totam vero eius alias repellat quia accusantium.</li>
+                        <li>Maxime totam vero eius alias repellat quia accusantium.</li>
+                    </ul>
+
+
+
+                </div>
+            </section>
+
+        </article>
+        <footer>
+            &copy; kang
+        </footer>
+    </div>
+
+</body>
+
+</html>
